@@ -1,0 +1,108 @@
+body{
+    background-image: url('img/');
+    background-color: lightblue;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.faixa-cursos {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: gray;
+    padding: 0px;
+    margin: 0;
+    text-align: center;
+}
+
+*{
+box-sizing: border-box;
+}
+
+.titulo-cursos {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size:35px;
+    font: weight 800;
+    color: #ffffff;
+}
+
+h1{
+    font-size: 40px;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 20px;
+    width: 100%;
+    margin: 120px auto 0 auto;
+    justify-content: center;
+    align-items: start;
+}
+
+img{
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    display: block;
+    margin: auto;
+    border-radius: 10px;
+    border: 2px solid #000;
+}
+
+.container-botao {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.botao-voltar {
+    background-color: orange;
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.botao-voltar:hover {
+    background-color: purple;
+}
+
+@media (max-width: 768px) {
+    .container {
+      grid-template-columns: 1fr;
+      margin: 80px auto 0 auto;
+      gap: 10px;
+    }
+  
+    .titulo-cursos {
+      font-size: 25px;
+    }
+  
+    h1 {
+      font-size: 30px;
+    }
+  
+    .faixa-cursos {
+      padding: 10px;
+    }
+  
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  
+    .botao-voltar {
+      padding: 12px 20px;
+      font-size: 16px;
+    }
+  
+    body {
+      background-position: top;
+    }
+  }
